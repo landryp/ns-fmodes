@@ -19,11 +19,3 @@ for more, please see Mohanty,Mali,Das+Landry 2024 (in prep)
 *the etc/ directory contains the data and utilities needed for the analysis*
 
 ... *# ...*
-
-
-bash batch/CalculateEnrichmentHistory_DAG.sh $(cat batch/CalculateEnrichmentHistory_DAG.in) \
-condor_submit_dag calculate_batch/CalculateEnrichmentHistory.dag
-
-bash batch/InferBNSDTD_DAG.sh $(cat batch/InferBNSDTD_DAG.in) \
-condor_submit_dag infer_batch/InferBNSDTD.dag \
-bash batch/InferBNSDTD_merge.sh
